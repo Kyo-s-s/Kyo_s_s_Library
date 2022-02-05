@@ -16,7 +16,7 @@ Z-algorithm
 
 
 ```C++
-bool is_SinT(strin S, string T)
+bool is_SinT(string S, string T)
 ```
 
 文字列$T$に文字列$S$が含まれるか, を返す. 文字列に\$が含まれる場合は壊れる. 適当に書き換えること.
