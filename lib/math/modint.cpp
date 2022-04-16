@@ -1,10 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// https://atcoder.github.io/ac-library/document_ja/modint.html
-
-template<int m> struct static_modint{
-    using mint = static_modint;
+template<int m> struct StaticModint{
+    using mint = StaticModint;
   public:
     static constexpr int mod() { return m; }
     static mint raw(int v) {
@@ -13,9 +11,9 @@ template<int m> struct static_modint{
         return x;
     }
 
-    static_modint() : _v(0) {}
+    StaticModint() : _v(0) {}
     template <class T>
-    static_modint(T v) {
+    StaticModint(T v) {
         long long x = (long long)(v % (long long)(umod()));
         if (x < 0) x += umod();
         _v = (unsigned int)(x);
@@ -99,12 +97,18 @@ template<int m> struct static_modint{
         return lhs._v != rhs._v;
     }
 
+    friend ostream &operator<<(ostream &os, mint &x) {
+        os << x.val();
+        return (os);
+    }
+
   private:
     unsigned int _v;
     static constexpr unsigned int umod() { return m; }
 
 };
 
-using modint998244353 = static_modint<998244353>;
-using modint1000000007 = static_modint<1000000007>;
+using Modint998244353 = StaticModint<998244353>;
+using Modint1000000007 = StaticModint<1000000007>;
 
+using Mint = Modint998244353;
