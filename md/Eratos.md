@@ -1,6 +1,6 @@
 # Eratos
 
-https://github.com/Kyo-s-s/Kyo_s_s_Library/blob/main/lib/data-structure/Eratos.cpp
+https://github.com/Kyo-s-s/Kyo_s_s_Library/blob/main/lib/math/Eratos.cpp
 
 エラトステネスの篩に関連したやつ
 
