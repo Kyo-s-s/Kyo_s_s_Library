@@ -1,4 +1,5 @@
 # LCA
+https://github.com/Kyo-s-s/Kyo_s_s_Library/blob/main/lib/data-structure/LCA.cpp
 
 最近共通祖先　RMQをセグ木で求めてるけど, 更新されないのでもっと高速に行えそう. 
 

@@ -1,5 +1,7 @@
 # Cumulative Sum
 
+https://github.com/Kyo-s-s/Kyo_s_s_Library/blob/main/lib/dp/CumulativeSum.cpp
+
 1次元累積和
 
 ## コンストラクタ

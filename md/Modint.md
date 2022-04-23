@@ -1,5 +1,7 @@
 # Modint
 
+https://github.com/Kyo-s-s/Kyo_s_s_Library/blob/main/lib/math/modint.cpp
+
 ほぼ[ACL](https://atcoder.github.io/ac-library/document_ja/modint.html)のパクり　
 
 998244353と1000000007以外を使うなら素直にACLを使ってください

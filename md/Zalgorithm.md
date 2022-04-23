@@ -1,5 +1,7 @@
 # Zalgorithm
 
+https://github.com/Kyo-s-s/Kyo_s_s_Library/blob/main/lib/String/Zalgorithm.cpp
+
 Z-algorithm
 
 ```C++

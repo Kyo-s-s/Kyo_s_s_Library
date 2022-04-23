@@ -1,5 +1,7 @@
 # Enumeration
 
+https://github.com/Kyo-s-s/Kyo_s_s_Library/blob/main/lib/math/Enumeration.cpp
+
 組み合わせ
 
 ## コンストラクタ

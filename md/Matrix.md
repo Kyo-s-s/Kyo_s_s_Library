@@ -1,5 +1,7 @@
 # Matrix
 
+https://github.com/Kyo-s-s/Kyo_s_s_Library/blob/main/lib/math/Matrix.cpp
+
 行列　すげー
 
 ## コンストラクタ
