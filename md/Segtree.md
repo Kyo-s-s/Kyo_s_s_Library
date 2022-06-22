@@ -10,3 +10,10 @@ https://github.com/Kyo-s-s/Kyo_s_s_Library/blob/main/lib/data-structure/Segtree.
 (2) RMQ seg(vector<long long> v)
 ```
 などと書けばよい。モノイドを乗せるときはACLと同じようにする。
+
+また、
+```cpp
+(1) SegtreeMmS seg(int n)
+(2) SegtreeMmS seg(vector<long long> v)
+```
+とすると`min`,`max`,`sum`が取得できるようになる。名前がキモいのでいつか直します

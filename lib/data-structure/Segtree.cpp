@@ -115,3 +115,29 @@ long long RSQop(long long a, long long b) { return a + b; }
 long long RSQe() { return 0; }
 using RSQ = Segtree<long long, RSQop, RSQe>;
 
+
+struct MmS { long long min, max, sum; };
+MmS MmSop(MmS a, MmS b){ return { min(a.min, b.min), max(a.max, b.max), a.sum + b.sum }; }
+MmS MmSe(){ return {1LL << 60, -1ll << 60, 0 }; }
+
+struct SegtreeMmS : Segtree<MmS, MmSop, MmSe> {
+    using Segtree::Segtree;
+    SegtreeMmS(int n){
+        vector<MmS> sv(n, MmSe());
+        (*this) = SegtreeMmS(sv);
+    }
+    SegtreeMmS(vector<long long> v) {
+        int n = v.size();
+        vector<MmS> sv(n);
+        for(int i = 0; i < n; i++) sv[i] = {v[i], v[i], v[i]};
+        (*this) = SegtreeMmS(sv);
+    }
+    void set(int p, long long x){
+        Segtree::set(p, {x, x, x});
+    }
+    long long get(int p){
+        return Segtree::get(p).sum;
+    }
+};
+
+
