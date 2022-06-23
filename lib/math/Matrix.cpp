@@ -35,8 +35,9 @@ template<class T> struct Matrix {
 
     Matrix operator*=(const Matrix &B) {
         assert(m == B.n);
+        m = B.m;
         vector<vector<T>> C(n, vector<T>(B.m, 0));
-        for(int i = 0; i < n; i++) for(int j = 0; j < B.m; j++) for(int k = 0; k < m; k++) C[i][j] += (*this)[i][k] * B[k][j];
+        for(int i = 0; i < n; i++) for(int j = 0; j < B.m; j++) for(int k = 0; k < B.n; k++) C[i][j] += (*this)[i][k] * B[k][j];
         M.swap(C);
         return (*this);
     }
