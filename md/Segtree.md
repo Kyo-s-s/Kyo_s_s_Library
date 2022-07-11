@@ -16,4 +16,4 @@ https://github.com/Kyo-s-s/Kyo_s_s_Library/blob/main/lib/data-structure/Segtree.
 (1) SegtreeMmS seg(int n)
 (2) SegtreeMmS seg(vector<long long> v)
 ```
-とすると`min`,`max`,`sum`が取得できるようになる。名前がキモいのでいつか直します
+とすると`min`,`max`,`sum`が取得できる　でもこれ別々のセグ木を持てばよいので使わないかも
