@@ -45,4 +45,4 @@ data:
   verificationCategories: []
 layout: toppage
 ---
-Kyo_s_s のライブラリです　壊れてたら教えてね なんもわからん
+Kyo_s_s のライブラリです　壊れてたら教えてね なんもわからん　困ったねぇ
